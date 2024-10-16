@@ -197,3 +197,8 @@ services:
     ports:
       - "3000:3000"
     profiles: [sort-report]
+
+  signoz_service:
+    extends:
+      file: log-system/signoz_service/signoz/docker-compose.yamllog-system/signoz_service/signoz/docker-compose-minimal.yaml
+      service: signoz_service
